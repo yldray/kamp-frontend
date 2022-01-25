@@ -1,3 +1,4 @@
+import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { Category } from './../../models/category';
 import { ProductService } from './../../services/product.service';
 import { Product } from './../../models/product';
@@ -24,7 +25,8 @@ export class ProductComponent implements OnInit {
 //ActivatedRoute aktifleştirilmiş route yani mevcut route
 
   constructor(private productService:ProductService,
-              private activatedRoute:ActivatedRoute) {}
+              private activatedRoute:ActivatedRoute,
+              private toastrService:ToastrService) {}
 
   ngOnInit(): void {
   this.activatedRoute.params.subscribe(params=>{
@@ -51,6 +53,9 @@ export class ProductComponent implements OnInit {
         this.dataLoaded=true;
       })
 
+  }
+  addToCart(product:Product){
+      this.toastrService.success("Sepete eklendi",product.productName)
   }
 
 }
