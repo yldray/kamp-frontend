@@ -14,6 +14,7 @@ import { HttpParams } from '@angular/common/http';
 export class ProductComponent implements OnInit {
   products:Product[]=[];
   dataLoaded=false;
+  filterText="";
 
   // productResponseModel:ProductResponseModel={
   //   data:this.products,
