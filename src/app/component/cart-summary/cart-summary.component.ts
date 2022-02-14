@@ -26,6 +26,10 @@ export class CartSummaryComponent implements OnInit {
 
   removeFromCart(product:Product){
     this.cartService.removeFromCart(product);
+<<<<<<< HEAD
     this.toastrService.error("Silindi",product.productName+ "sepetten silindi.");
+=======
+    this.toastrService.error("Silindi",product.productName);
+>>>>>>> 1481d9c309ef3af0ec49e5d689b298e8fa1ba6c3
   }
 }

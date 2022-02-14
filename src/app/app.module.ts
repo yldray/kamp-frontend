@@ -14,7 +14,10 @@ import { FilterPipe } from './pipes/filter.pipe';
 
 import { ToastrModule } from 'ngx-toastr';
 import { CartSummaryComponent } from './component/cart-summary/cart-summary.component';
+<<<<<<< HEAD
 import { ProductAddComponent } from './component/product-add/product-add.component';
+=======
+>>>>>>> 1481d9c309ef3af0ec49e5d689b298e8fa1ba6c3
 
 @NgModule({
   declarations: [
@@ -24,8 +27,12 @@ import { ProductAddComponent } from './component/product-add/product-add.compone
     NaviComponent,
     VatAddedPipe,
     FilterPipe,
+<<<<<<< HEAD
     CartSummaryComponent,
     ProductAddComponent
+=======
+    CartSummaryComponent
+>>>>>>> 1481d9c309ef3af0ec49e5d689b298e8fa1ba6c3
   ],
   imports: [
     BrowserModule,
